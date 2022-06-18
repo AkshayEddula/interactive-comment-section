@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+html{
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(223, 19%, 93%);
+}
+
+section {
+  width: 50%;
+  margin: 50px;
+}
+
+.top-container .comment1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.top-container .comment_content .pro {
+  display:flex;
+  width: 40%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-container .comment_content .pro img {
+  transform: scale(0.6);
+}
+
+.top-container .comment_content .pro h3 {
+  font-size: 16px;
+  color: hsl(212, 24%, 26%);
+  font-weight: 500;
+}
+
+.top-container .comment_content .pro p{
+  font-size: 12px;
+  padding-left: 10px;
+  color:hsl(211, 10%, 45%);
+}
+
+.likes-adder {
+  background-color: white;
+  padding: 8px;
+  margin: 10px 20px 10px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+}
+
+.likes-adder p {
+  font-weight: 700;
+  color: hsl(238, 40%, 52%);
+  margin: 9px 0;
+}
+
+.likes-adder button {
+  background-color: white ;
+  border: none;
+  font-size: 20px;
+  color: hsl(211, 10%, 45%);
+  cursor: pointer;
+}
+
+.top-container .comment1 .comment_content{
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+
+.top-container .comment1 .comment_content .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-container .comment1 .comment_content .profile .icon_1 button {
+  display:flex;
+  align-items: center;
+  width: 75px;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  color: hsl(238, 40%, 52%);
+  font-weight: 400;
+  font-size: 14px;
+} 
+
+.top-container .comment1 .comment_content  .comment_para p {
+  color: hsl(211, 10%, 45%);
+  padding-left: 10px;
+  margin: 0;
+  line-height: 23px
+}

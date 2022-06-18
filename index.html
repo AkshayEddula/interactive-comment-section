@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,11 +16,127 @@
 </head>
 <body>
 
-  <!-- Pull dynamic content from the data.json file -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <section>
+      <div class="main">
+        <div class="top-container">
+          <div class="comment1">
+            <div class="likes-adder">
+              <button id="like_Increase">+</button>
+              <p>12</p>
+              <button id="like_Decrease">-</button>
+            </div>
+            <div class="comment_content">
+              <div class="profile">
+                <div class="pro">
+                  <img src="./images/avatars/image-amyrobson.png" alt="profile1">
+                  <h3>amyrobson</h3>
+                  <p>1 month ago</p>
+                </div>
+                <div class="icon_1">
+                  <button class="reply">
+                    <img src="images/icon-reply.svg" alt="">
+                   <h3>Reply</h3>
+                  </button>
+                </div>
+              </div>
+              <div class="comment_para">
+                <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment1">
+            <div class="likes-adder">
+              <button id="like_Increase">+</button>
+              <p>5</p>
+              <button id="like_Decrease">-</button>
+            </div>
+            <div class="comment_content">
+              <div class="profile">
+                <div class="pro">
+                  <img src="./images/avatars/image-maxblagun.png" alt="profile1">
+                  <h3>maxblagun</h3>
+                  <p>2 weeks ago</p>
+                </div>
+                
+                <div class="icon_1">
+                  <button class="reply">
+                    <img src="images/icon-reply.svg" alt="">
+                   <h3>Reply</h3>
+                  </button>
+                </div>
+              </div>
+              <div class="comment_para">
+                <p>Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-container">
+          <div class="comment2">
+            <div class="likes-adder">
+              <button id="like_Increase">+</button>
+              <p>4</p>
+              <button id="like_Decrease">-</button>
+            </div>
+            <div class="comment_content">
+              <div class="profile">
+                <div class="pro">
+                  <img src="/images/avatars/image-ramsesmiron.png" alt="profile1">
+                  
+                  <p>1 weeks ago</p>
+                </div>
+                <div class="icon_1">
+                  <button class="reply">
+                    <img src="images/icon-reply.svg" alt="">
+                   <h3>Reply</h3>
+                  </button>
+                </div>
+              </div>
+              <div class="comment_para">
+                <p><span class="reply_name"></span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+              </div>
+          </div>
+          <div class="comment">
+            <div class="likes-adder">
+              <button id="like_Increase">+</button>
+              <p>2</p>
+              <button id="like_Decrease">-</button>
+            </div>
+            <div class="comment_content">
+              <div class="profile">
+                <div class="pro">
+                  <img src="/images/avatars/image-juliusomo.png" alt="profile1">
+                  <p>2 days ago</p>
+                </div>
+                <div class="icons">
+                  <button class="delete">
+                    <img src="images/icon-delete.svg" alt="">
+                    <h3>Delete</h3>
+                  </button>
+                  <button class="edit">
+                    <img src="images/icon-edit.svg" alt="">
+                    <h3>Edit</h3>
+                  </button>
+                  
+                </div>
+              </div>
+              <div class="comment_para">
+                <p><span class="reply_name"></span>I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+              </div>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <img src="images/avatars/image-juliusomo.png" alt="">
+          <input type="text">
+          <button type="submit">SEND</button>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
