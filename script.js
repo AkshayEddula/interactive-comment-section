@@ -77,15 +77,38 @@ function showReply(){
     replyto[0].classList.toggle('show')
 }
 
+reply2 = document.getElementsByClassName('replytop2');
+replshow = document.getElementsByClassName('replytor');
+console.log(reply2)
 
-replyBut2 = document.getElementsByClassName('replytop2');
-replyto2 = document.getElementsByClassName('reply2');
-addpara2 = document.getElementsByClassName('reply2 content')
+reply2[0].addEventListener('click', showReply2);
 
-replyBut[0].addEventListener('click',showReply);
-function showReply(){
-    replyto[0].classList.toggle('show')
+function showReply2() {
+    console.log('hi')
+    replshow[0].classList.toggle('okShow');
 }
+
+// adding another reply
+
+textreply2 = document.getElementsByClassName('replyto2');
+addReply2 = document.getElementById('replyed2');
+addpara2 = document.getElementsByClassName('content2');
+addContent2 = document.getElementById('none');
+
+addReply2.addEventListener('click',addReply3);
+function addReply3() {
+        if (addpara2[0].innerHTML = null) {
+            console.log("Write something")
+        }
+        else {
+            addpara2[0].innerHTML = textreply2[0].value ;
+            replshow[0].classList.remove('okShow')
+            replshow[0].classList.add('notshow');
+            addContent2.style.display = "flex";
+        }
+}
+
+
 
 
 // adding reply 
@@ -106,3 +129,73 @@ function addReply() {
             addContent.style.display = "flex";
         }
 }
+
+// reply edit 
+
+edit = document.getElementById('edit');
+textarea = document.getElementsByClassName('text');
+pararemove = document.getElementsByClassName('para');
+update = document.getElementsByClassName('update')
+
+edit.addEventListener('click',showtext)
+function showtext() {
+    pararemove[0].classList.toggle('notshow');
+    textarea[0].classList.toggle('notshow');
+    update[0].classList.toggle('notshow');
+    textarea[0].value = pararemove[0].innerText;
+}
+
+update[0].addEventListener('click',updatetext);
+
+function updatetext() {
+    pararemove[0].innerText = textarea[0].value;
+    pararemove[0].classList.toggle('notshow');
+    textarea[0].classList.toggle('notshow');
+    update[0].classList.toggle('notshow');
+}
+
+// delete button
+
+del = document.getElementById('delete');
+modal = document.getElementsByClassName('modal_window')
+overlay = document.getElementsByClassName('overlay')
+no = document.getElementsByClassName('no');
+com3 = document.getElementsByClassName('comment')
+yes = document.getElementsByClassName('yes')
+
+overlay[0].addEventListener('click',closemodal);
+yes[0].addEventListener('click',deletecomment);
+no[0].addEventListener('click',closemodal);
+del.addEventListener('click',showmodal);
+
+function deletecomment(){
+    console.log('hi')
+    closemodal();
+    com3[0].classList.add('notshow')
+}
+function showmodal() {
+    modal[0].classList.remove('notshow');
+    overlay[0].classList.remove('hidd');
+}
+
+function closemodal() {
+    modal[0].classList.add('notshow');
+    overlay[0].classList.add('hidd');
+}
+
+// comment add
+
+commenttext = document.getElementById('addcomment');
+commentadd = document.getElementById('comment11');
+para2 = document.getElementsByClassName('para2');
+send = document.getElementById('send');
+
+send.addEventListener('click',sendfun)
+
+function sendfun() {
+    para2[0].innerHTML = commenttext.value ;
+    commentadd.classList.remove('notshow');
+}
+
+
+
